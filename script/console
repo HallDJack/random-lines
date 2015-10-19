@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+require 'pry'
+require 'awesome_print'
+
+Bundler.require
+
+ENV['custom_logfile'] = 'console.log'
+
+require_relative '../app/random_line.rb'
+
+Pry.start
+
